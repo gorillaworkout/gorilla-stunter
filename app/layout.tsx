@@ -32,11 +32,11 @@ export const metadata: Metadata = {
     description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
     type: "website",
     locale: "en_US",
-    url: "https://gorillastunter.com",
+    url: "https://gorillastunter.gorillaworkout.id",
     siteName: "Gorilla Stunter",
     images: [
       {
-        url: "https://gorillastunter.com/new_gs_4.png",
+        url: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
         width: 1200,
         height: 630,
         alt: "Gorilla Stunter - Elite Cheerleading Stunt Community Logo",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Gorilla Stunter - Elite Cheerleading Stunt Community",
     description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
-    images: ["https://gorillastunter.com/new_gs_4.png"],
+    images: ["https://gorillastunter.gorillaworkout.id/new_gs_4.png"],
     creator: "@gorillastunter",
     site: "@gorillastunter",
   },
@@ -69,9 +69,9 @@ export const metadata: Metadata = {
     yahoo: "your-yahoo-verification-code",
   },
   alternates: {
-    canonical: "https://gorillastunter.com",
+    canonical: "https://gorillastunter.gorillaworkout.id",
     languages: {
-      "en-US": "https://gorillastunter.com",
+      "en-US": "https://gorillastunter.gorillaworkout.id",
     },
   },
   category: "Sports & Fitness",
@@ -101,16 +101,30 @@ export default function RootLayout({
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         
         {/* WhatsApp and Telegram specific meta tags */}
-        <meta property="og:image" content="https://gorillastunter.com/new_gs_4.png" />
-        <meta property="og:image:secure_url" content="https://gorillastunter.com/new_gs_4.png" />
+        <meta property="og:image" content="https://gorillastunter.gorillaworkout.id/new_gs_4.png" />
+        <meta property="og:image:secure_url" content="https://gorillastunter.gorillaworkout.id/new_gs_4.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Gorilla Stunter - Elite Cheerleading Stunt Community" />
         
         {/* Additional social media meta tags */}
-        <meta name="twitter:image" content="https://gorillastunter.com/new_gs_4.png" />
+        <meta name="twitter:image" content="https://gorillastunter.gorillaworkout.id/new_gs_4.png" />
         <meta name="twitter:image:alt" content="Gorilla Stunter - Elite Cheerleading Stunt Community" />
+        
+        {/* Additional meta tags for better sharing */}
+        <meta property="og:site_name" content="Gorilla Stunter" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="article:author" content="Gorilla Stunter" />
+        <meta name="apple-mobile-web-app-title" content="Gorilla Stunter" />
+        <meta name="application-name" content="Gorilla Stunter" />
+        
+        {/* WhatsApp Business specific */}
+        <meta property="business:contact_data:street_address" content="Jl. Bulungan No.1, RT.11/RW.7" />
+        <meta property="business:contact_data:locality" content="Kramat Pela" />
+        <meta property="business:contact_data:region" content="Jakarta Selatan" />
+        <meta property="business:contact_data:postal_code" content="12130" />
+        <meta property="business:contact_data:country_name" content="Indonesia" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -120,9 +134,9 @@ export default function RootLayout({
               name: "Gorilla Stunter",
               description:
                 "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
-              url: "https://gorillastunter.com",
-              logo: "https://gorillastunter.com/new_gs_4.png",
-              image: "https://gorillastunter.com/new_gs_4.png",
+              url: "https://gorillastunter.gorillaworkout.id",
+              logo: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
+              image: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
               telephone: "+1-555-123-4567",
               email: "info@gorillastunter.com",
               address: {

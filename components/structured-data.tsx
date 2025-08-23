@@ -17,14 +17,14 @@ export default function StructuredData({ type, title, description, url }: Struct
     isPartOf: {
       "@type": "WebSite",
       name: "Gorilla Stunter",
-      url: "https://gorillastunter.com",
+      url: "https://gorillastunter.gorillaworkout.id",
     },
     about: {
       "@type": "SportsOrganization",
       name: "Gorilla Stunter",
       sport: "Cheerleading",
       description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia",
-      logo: "https://gorillastunter.com/new_gs_4.png",
+      logo: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
     },
   }
 
@@ -35,7 +35,7 @@ export default function StructuredData({ type, title, description, url }: Struct
         "@type": "SportsOrganization",
         name: "Gorilla Stunter",
         description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia",
-        logo: "https://gorillastunter.com/new_gs_4.png",
+        logo: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
       },
     },
     AboutPage: {

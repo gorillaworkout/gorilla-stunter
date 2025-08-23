@@ -19,10 +19,10 @@ export const metadata: Metadata = {
     description:
       "Hubungi Gorilla Stunter untuk informasi tentang program pelatihan partner stunt elite kami yang dilatih oleh athlete-athlete kelas dunia.",
     type: "website",
-    url: "https://gorillastunter.com/contact",
+    url: "https://gorillastunter.gorillaworkout.id/contact",
     images: [
       {
-        url: "https://gorillastunter.com/new_gs_4.png",
+        url: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
         width: 1200,
         height: 630,
         alt: "Contact Gorilla Stunter - Get in Touch",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://gorillastunter.com/contact",
+    canonical: "https://gorillastunter.gorillaworkout.id/contact",
   },
 }
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
         type="ContactPage"
         title="Contact Us - Gorilla Stunter"
         description="Hubungi Gorilla Stunter untuk informasi tentang program pelatihan partner stunt elite kami yang dilatih oleh athlete-athlete kelas dunia."
-        url="https://gorillastunter.com/contact"
+        url="https://gorillastunter.gorillaworkout.id/contact"
       />
       <main className="min-h-screen">
         <Navigation />
