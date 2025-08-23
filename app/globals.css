@@ -1,0 +1,335 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme to black and gold for more elegant look */
+  --background: oklch(0.1 0 0); /* Deep black background */
+  --foreground: oklch(0.95 0 0); /* Light text for contrast */
+  --card: oklch(0.15 0 0); /* Dark gray for card backgrounds */
+  --card-foreground: oklch(0.95 0 0); /* Light text for cards */
+  --popover: oklch(0.1 0 0); /* Black for popover backgrounds */
+  --popover-foreground: oklch(0.95 0 0); /* Light text for popovers */
+  --primary: oklch(0.75 0.15 85); /* Gold for primary elements */
+  --primary-foreground: oklch(0.1 0 0); /* Black text on gold elements */
+  --secondary: oklch(0.65 0.12 75); /* Metallic gold for accents */
+  --secondary-foreground: oklch(0.1 0 0); /* Black text on secondary elements */
+  --muted: oklch(0.2 0 0); /* Dark gray for muted backgrounds */
+  --muted-foreground: oklch(0.7 0 0); /* Medium light gray for muted text */
+  --accent: oklch(0.65 0.12 75); /* Metallic gold for accents */
+  --accent-foreground: oklch(0.1 0 0); /* Black text on accent elements */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(1 0 0);
+  --border: oklch(0.25 0 0); /* Dark gray for borders */
+  --input: oklch(0.15 0 0); /* Dark gray for input fields */
+  --ring: oklch(0.75 0.15 85 / 0.5); /* Gold ring effect for focus states */
+  --chart-1: oklch(0.75 0.15 85); /* Gold for chart elements */
+  --chart-2: oklch(0.65 0.12 75); /* Metallic gold for chart elements */
+  --chart-3: oklch(0.2 0 0); /* Dark gray for chart elements */
+  --chart-4: oklch(0.15 0 0); /* Darker gray for chart elements */
+  --chart-5: oklch(0.95 0 0); /* Light gray for chart elements */
+  --radius: 0.5rem; /* Rounded corners for elegance */
+  --sidebar: oklch(0.15 0 0); /* Dark gray for sidebar background */
+  --sidebar-foreground: oklch(0.95 0 0); /* Light text for sidebar */
+  --sidebar-primary: oklch(0.75 0.15 85); /* Gold for sidebar primary elements */
+  --sidebar-primary-foreground: oklch(0.1 0 0); /* Black text on sidebar primary */
+  --sidebar-accent: oklch(0.65 0.12 75); /* Metallic gold for sidebar accents */
+  --sidebar-accent-foreground: oklch(0.1 0 0); /* Black text on sidebar accent */
+  --sidebar-border: oklch(0.25 0 0); /* Dark gray for sidebar borders */
+  --sidebar-ring: oklch(0.75 0.15 85 / 0.5); /* Gold ring for sidebar focus */
+}
+
+.dark {
+  --background: oklch(0.05 0 0); /* Even darker for dark mode */
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.1 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.05 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.75 0.15 85);
+  --primary-foreground: oklch(0.05 0 0);
+  --secondary: oklch(0.2 0 0);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.15 0 0);
+  --muted-foreground: oklch(0.75 0 0);
+  --accent: oklch(0.65 0.12 75);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.637 0.237 25.331);
+  --border: oklch(0.2 0 0);
+  --input: oklch(0.1 0 0);
+  --ring: oklch(0.75 0.15 85 / 0.5);
+  --chart-1: oklch(0.75 0.15 85);
+  --chart-2: oklch(0.65 0.12 75);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.1 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.75 0.15 85);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.15 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.2 0 0);
+  --sidebar-ring: oklch(0.75 0.15 85 / 0.5);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Added custom fonts for Gorilla Stunter design */
+  --font-heading: "Montserrat", system-ui, sans-serif;
+  --font-body: "Open Sans", system-ui, sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  /* Added custom font classes for elegant typography */
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  /* Added smooth scrolling and enhanced animations */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Enhanced focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  /* Custom selection colors */
+  ::selection {
+    @apply bg-primary/20 text-foreground;
+  }
+
+  /* Enhanced button hover effects */
+  .btn-hover-lift {
+    @apply transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+
+  /* Smooth card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Loading animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  /* Added more sophisticated scroll animations for dynamic entrance effects */
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes rotateIn {
+    from {
+      opacity: 0;
+      transform: rotate(-10deg) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+    }
+  }
+
+  /* Enhanced card animations with gold glow effect */
+  .card-glow-hover {
+    @apply transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-3;
+  }
+
+  /* Floating animation for hero elements */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Pulse animation for call-to-action elements */
+  @keyframes pulse-gold {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 0 10px rgba(255, 215, 0, 0);
+    }
+  }
+
+  .animate-pulse-gold {
+    animation: pulse-gold 2s infinite;
+  }
+
+  /* Stagger animation delays */
+  .animate-delay-100 {
+    animation-delay: 0.1s;
+  }
+  .animate-delay-200 {
+    animation-delay: 0.2s;
+  }
+  .animate-delay-300 {
+    animation-delay: 0.3s;
+  }
+  .animate-delay-400 {
+    animation-delay: 0.4s;
+  }
+  .animate-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* Added smooth gradient text animation for premium feel */
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(-45deg, #ffd700, #ffa500, #ffd700, #b8860b);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 3s ease infinite;
+  }
+
+  /* Enhanced loading states */
+  .loading-shimmer {
+    background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}
