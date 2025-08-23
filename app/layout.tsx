@@ -22,32 +22,33 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Gorilla Stunter - Elite Cheerleading Stunt Community",
   description:
-    "Professional cheerleading stunt partner community dedicated to excellence, precision, and teamwork. Join the elite Gorilla Stunter family.",
-  keywords: "cheerleading, stunt, partner stunt, cheerleading community, elite cheerleading, stunt training",
+    "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia. Bergabunglah dengan Gorilla Stunter untuk mencapai level elite dalam cheerleading.",
+  keywords: "cheerleading, stunt, partner stunt, cheerleading community, elite cheerleading, stunt training, komunitas cheerleading, athlete kelas dunia, gorilla stunter",
   authors: [{ name: "Gorilla Stunter" }],
   creator: "Gorilla Stunter",
   publisher: "Gorilla Stunter",
   openGraph: {
     title: "Gorilla Stunter - Elite Cheerleading Stunt Community",
-    description: "Professional cheerleading stunt partner community dedicated to excellence, precision, and teamwork.",
+    description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
     type: "website",
     locale: "en_US",
     url: "https://gorillastunter.com",
     siteName: "Gorilla Stunter",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://gorillastunter.com/new_gs_4.png",
         width: 1200,
         height: 630,
-        alt: "Gorilla Stunter - Elite Cheerleading Stunt Community",
+        alt: "Gorilla Stunter - Elite Cheerleading Stunt Community Logo",
+        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Gorilla Stunter - Elite Cheerleading Stunt Community",
-    description: "Professional cheerleading stunt partner community dedicated to excellence, precision, and teamwork.",
-    images: ["/twitter-image.jpg"],
+    description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
+    images: ["https://gorillastunter.com/new_gs_4.png"],
     creator: "@gorillastunter",
     site: "@gorillastunter",
   },
@@ -91,9 +92,25 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="shortcut icon" href="/new_gs_4.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#FFD700" />
         <meta name="msapplication-TileColor" content="#FFD700" />
+        <meta name="google-site-verification" content="your-google-verification-code" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        
+        {/* WhatsApp and Telegram specific meta tags */}
+        <meta property="og:image" content="https://gorillastunter.com/new_gs_4.png" />
+        <meta property="og:image:secure_url" content="https://gorillastunter.com/new_gs_4.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Gorilla Stunter - Elite Cheerleading Stunt Community" />
+        
+        {/* Additional social media meta tags */}
+        <meta name="twitter:image" content="https://gorillastunter.com/new_gs_4.png" />
+        <meta name="twitter:image:alt" content="Gorilla Stunter - Elite Cheerleading Stunt Community" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -102,10 +119,10 @@ export default function RootLayout({
               "@type": "SportsOrganization",
               name: "Gorilla Stunter",
               description:
-                "Elite cheerleading stunt partner community dedicated to excellence, precision, and teamwork.",
+                "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
               url: "https://gorillastunter.com",
-              logo: "https://gorillastunter.com/logo.png",
-              image: "https://gorillastunter.com/og-image.jpg",
+              logo: "https://gorillastunter.com/new_gs_4.png",
+              image: "https://gorillastunter.com/new_gs_4.png",
               telephone: "+1-555-123-4567",
               email: "info@gorillastunter.com",
               address: {

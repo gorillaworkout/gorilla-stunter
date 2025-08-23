@@ -1,7 +1,7 @@
 {
   "name": "Gorilla Stunter - Elite Cheerleading Stunt Community",
   "short_name": "Gorilla Stunter",
-  "description": "Professional cheerleading stunt partner community dedicated to excellence, precision, and teamwork.",
+  "description": "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
@@ -9,13 +9,13 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/new_gs_4.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/new_gs_4.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"

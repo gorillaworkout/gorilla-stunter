@@ -5,6 +5,7 @@ import { OrbitControls, Environment, Text3D, Float } from "@react-three/drei"
 import { Suspense } from "react"
 import { Button } from "@/components/ui/button"
 import LoadingSpinner from "@/components/loading-spinner"
+import WhatsAppButton from "@/components/whatsapp-button"
 
 function CheerleaderScene() {
   return (
@@ -106,20 +107,13 @@ export default function Hero3D() {
             are forged through dedication and skill.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animate-delay-300">
-            <Button
+          <div className="flex justify-center animate-fade-in-up animate-delay-300">
+            <WhatsAppButton
               size="lg"
               className="bg-primary hover:bg-accent text-primary-foreground font-heading font-bold text-lg px-8 py-4 btn-hover-lift"
             >
               Join Our Community
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-heading font-semibold text-lg px-8 py-4 bg-transparent btn-hover-lift"
-            >
-              Watch Our Story
-            </Button>
+            </WhatsAppButton>
           </div>
         </div>
       </div>

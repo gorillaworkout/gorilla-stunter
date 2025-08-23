@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -46,12 +46,19 @@ export default function Navigation() {
     <>
       <nav className={navClassName}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-16 sm:h-18 md:h-16">
             <Link
               href="/"
-              className="font-heading font-black text-2xl text-primary hover:text-accent transition-all duration-300 transform hover:scale-105"
+              className="flex items-center transition-all duration-300 transform hover:scale-105"
             >
-              GORILLA STUNTER
+                              <Image
+                  src="/new_logo_gs.png"
+                  alt="Gorilla Stunter - Elite Cheerleading Community"
+                  width={180}
+                  height={60}
+                  className="h-14 w-auto object-contain sm:h-16 md:h-16 lg:h-18 xl:h-20"
+                  priority
+                />
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
@@ -96,9 +103,7 @@ export default function Navigation() {
               </Link>
             </div>
 
-            <Button className="hidden md:inline-flex bg-primary hover:bg-accent text-primary-foreground font-heading font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
-              Join Community
-            </Button>
+
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -173,11 +178,7 @@ export default function Navigation() {
             >
               Contact
             </Link>
-            <div className="pt-4 border-t border-border">
-              <Button className="w-full bg-primary hover:bg-accent text-primary-foreground font-heading font-semibold transition-all duration-300">
-                Join Community
-              </Button>
-            </div>
+
           </div>
         </div>
       </div>

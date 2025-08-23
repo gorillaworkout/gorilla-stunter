@@ -23,6 +23,8 @@ export default function StructuredData({ type, title, description, url }: Struct
       "@type": "SportsOrganization",
       name: "Gorilla Stunter",
       sport: "Cheerleading",
+      description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia",
+      logo: "https://gorillastunter.com/new_gs_4.png",
     },
   }
 
@@ -32,7 +34,8 @@ export default function StructuredData({ type, title, description, url }: Struct
       mainEntity: {
         "@type": "SportsOrganization",
         name: "Gorilla Stunter",
-        description: "Elite cheerleading stunt partner community",
+        description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia",
+        logo: "https://gorillastunter.com/new_gs_4.png",
       },
     },
     AboutPage: {
@@ -40,8 +43,8 @@ export default function StructuredData({ type, title, description, url }: Struct
       mainEntity: {
         "@type": "Organization",
         name: "Gorilla Stunter",
-        foundingDate: "1999",
-        description: "Elite cheerleading stunt partner community founded in 1999",
+        foundingDate: "2025",
+        description: "Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia, didirikan tahun 2025",
         founder: {
           "@type": "Person",
           name: "Renaldy Hardyant",

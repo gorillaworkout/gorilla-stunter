@@ -11,7 +11,7 @@ export default function HomePage() {
       <StructuredData
         type="WebPage"
         title="Gorilla Stunter - Elite Cheerleading Stunt Community"
-        description="Professional cheerleading stunt partner community dedicated to excellence, precision, and teamwork."
+        description="Komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia."
         url="https://gorillastunter.com"
       />
       <Navigation />
@@ -315,7 +315,7 @@ export default function HomePage() {
                       <span className="font-heading font-bold text-primary-foreground">SM</span>
                     </div>
                     <div>
-                      <div className="font-heading font-semibold text-foreground">Sarah Martinez</div>
+                      <div className="font-heading font-semibold text-foreground">Sollah</div>
                       <div className="font-body text-sm text-muted-foreground">National Champion</div>
                     </div>
                   </div>
@@ -344,7 +344,7 @@ export default function HomePage() {
                       <span className="font-heading font-bold text-primary-foreground">MJ</span>
                     </div>
                     <div>
-                      <div className="font-heading font-semibold text-foreground">Mike Johnson</div>
+                      <div className="font-heading font-semibold text-foreground">Indah Tri</div>
                       <div className="font-body text-sm text-muted-foreground">Elite Stunter</div>
                     </div>
                   </div>
@@ -373,8 +373,8 @@ export default function HomePage() {
                       <span className="font-heading font-bold text-primary-foreground">AL</span>
                     </div>
                     <div>
-                      <div className="font-heading font-semibold text-foreground">Alex Lee</div>
-                      <div className="font-body text-sm text-muted-foreground">Team Captain</div>
+                      <div className="font-heading font-semibold text-foreground">Rai</div>
+                      <div className="font-body text-sm text-muted-foreground">Flyer</div>
                     </div>
                   </div>
                 </CardContent>

@@ -11,21 +11,22 @@ import WhatsAppButton from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "Contact Us - Gorilla Stunter | Get in Touch with Elite Cheerleading Community",
   description:
-    "Contact Gorilla Stunter for information about our elite cheerleading stunt training programs, membership, and coaching opportunities. We're here to help you excel.",
+    "Hubungi Gorilla Stunter untuk informasi tentang program pelatihan partner stunt elite kami yang dilatih oleh athlete-athlete kelas dunia. Kami siap membantu Anda mencapai level terbaik.",
   keywords:
-    "contact gorilla stunter, cheerleading inquiries, stunt training contact, elite coaching contact, cheerleading community contact",
+    "contact gorilla stunter, cheerleading inquiries, stunt training contact, elite coaching contact, cheerleading community contact, kontak gorilla stunter, komunitas cheerleading",
   openGraph: {
     title: "Contact Us - Gorilla Stunter | Get in Touch with Elite Cheerleading Community",
     description:
-      "Contact Gorilla Stunter for information about our elite cheerleading stunt training programs and membership.",
+      "Hubungi Gorilla Stunter untuk informasi tentang program pelatihan partner stunt elite kami yang dilatih oleh athlete-athlete kelas dunia.",
     type: "website",
     url: "https://gorillastunter.com/contact",
     images: [
       {
-        url: "/contact-og-image.png",
+        url: "https://gorillastunter.com/new_gs_4.png",
         width: 1200,
         height: 630,
         alt: "Contact Gorilla Stunter - Get in Touch",
+        type: "image/png",
       },
     ],
   },
@@ -40,7 +41,7 @@ export default function ContactPage() {
       <StructuredData
         type="ContactPage"
         title="Contact Us - Gorilla Stunter"
-        description="Contact Gorilla Stunter for information about our elite cheerleading stunt training programs and membership."
+        description="Hubungi Gorilla Stunter untuk informasi tentang program pelatihan partner stunt elite kami yang dilatih oleh athlete-athlete kelas dunia."
         url="https://gorillastunter.com/contact"
       />
       <main className="min-h-screen">

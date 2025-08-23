@@ -8,21 +8,22 @@ import WhatsAppButton from "@/components/whatsapp-button"
 export const metadata: Metadata = {
   title: "About Us - Gorilla Stunter | Elite Cheerleading Stunt Community",
   description:
-    "Learn about Gorilla Stunter's mission, values, and commitment to excellence in cheerleading stunt training. Discover our story and meet our elite team of coaches.",
+    "Pelajari tentang misi Gorilla Stunter, komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia. Temukan kisah kami dan tim pelatih elite.",
   keywords:
-    "about gorilla stunter, cheerleading history, stunt training philosophy, elite coaches, cheerleading community values",
+    "about gorilla stunter, cheerleading history, stunt training philosophy, elite coaches, cheerleading community values, komunitas cheerleading, athlete kelas dunia",
   openGraph: {
     title: "About Us - Gorilla Stunter | Elite Cheerleading Stunt Community",
     description:
-      "Learn about Gorilla Stunter's mission, values, and commitment to excellence in cheerleading stunt training.",
+      "Pelajari tentang misi Gorilla Stunter, komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia.",
     type: "website",
     url: "https://gorillastunter.com/about",
     images: [
       {
-        url: "/about-og-image.png",
+        url: "https://gorillastunter.com/new_gs_4.png",
         width: 1200,
         height: 630,
         alt: "About Gorilla Stunter - Our Story and Mission",
+        type: "image/png",
       },
     ],
   },
@@ -37,7 +38,7 @@ export default function AboutPage() {
       <StructuredData
         type="AboutPage"
         title="About Us - Gorilla Stunter"
-        description="Learn about Gorilla Stunter's mission, values, and commitment to excellence in cheerleading stunt training."
+        description="Pelajari tentang misi Gorilla Stunter, komunitas cheerleading untuk berlatih partner stunt yang dilatih oleh athlete-athlete kelas dunia."
         url="https://gorillastunter.com/about"
       />
       <main className="min-h-screen">

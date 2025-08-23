@@ -332,4 +332,85 @@
       background-position: 200% 0;
     }
   }
+
+  /* Hero section animations */
+  .animation-delay-1000 {
+    animation-delay: 1s;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  @keyframes float-gentle {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .float-gentle {
+    animation: float-gentle 3s ease-in-out infinite;
+  }
+
+  @keyframes logo-glow {
+    0%, 100% {
+      opacity: 0.1;
+      filter: blur(0px);
+    }
+    50% {
+      opacity: 0.5;
+      filter: blur(2px);
+    }
+  }
+
+  .logo-background {
+    animation: logo-glow 4s ease-in-out infinite;
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 640px) {
+    .logo-background {
+      animation-duration: 6s; /* Slower animation on mobile for better performance */
+    }
+    
+    .float-gentle {
+      animation-duration: 4s; /* Gentler floating on mobile */
+    }
+  }
+
+  /* Mobile logo enhancements - combines with logo-background animation */
+  .mobile-logo-prominent {
+    filter: drop-shadow(0 8px 16px rgba(255, 215, 0, 0.4)) brightness(1.1);
+  }
+
+  .mobile-logo-prominent:hover {
+    filter: drop-shadow(0 12px 24px rgba(255, 215, 0, 0.6)) brightness(1.2);
+    transform: scale(1.02);
+  }
+
+  /* Enhanced mobile logo glow animation */
+  @media (max-width: 767px) {
+    .logo-background.mobile-logo-prominent {
+      animation: mobile-logo-glow 4s ease-in-out infinite;
+    }
+  }
+
+  @keyframes mobile-logo-glow {
+    0%, 100% {
+      filter: drop-shadow(0 8px 16px rgba(255, 215, 0, 0.4)) brightness(1.1);
+    }
+    50% {
+      filter: drop-shadow(0 12px 24px rgba(255, 215, 0, 0.6)) brightness(1.2);
+    }
+  }
+
+  /* Ensure proper text rendering on all devices */
+  .text-responsive {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
 }
