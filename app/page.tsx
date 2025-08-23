@@ -478,7 +478,7 @@ export default function HomePage() {
                     <br />
                    Kramat Pela, Kec. Kby. Baru
                     <br />
-                   Kota Jakarta Selatan, DKI Jakarta 12130
+                   Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
                   </li>
               </ul>
             </div>

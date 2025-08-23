@@ -513,11 +513,11 @@ export default function AboutPage() {
                   <li>Email: info@gorillastunter.com</li>
                   <li>Phone: (555) 123-4567</li>
                                       <li>
-                     Address: Jl. Bulungan No.1, RT.11/RW.7
-                      <br />
-                     Kramat Pela, Kec. Kby. Baru
-                      <br />
-                     Kota Jakarta Selatan, DKI Jakarta 12130
+                                        Address: Jl. Bulungan No.1, RT.11/RW.7
+                    <br />
+                   Kramat Pela, Kec. Kby. Baru
+                    <br />
+                   Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
                     </li>
                 </ul>
               </div>

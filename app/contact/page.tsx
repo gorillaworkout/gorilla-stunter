@@ -7,6 +7,8 @@ import { Label } from "@/components/ui/label"
 import StructuredData from "@/components/structured-data"
 import AnimatedSection from "@/components/animated-section"
 import WhatsAppButton from "@/components/whatsapp-button"
+import InteractiveMap from "@/components/interactive-map"
+import 'leaflet/dist/leaflet.css'
 
 export const metadata: Metadata = {
   title: "Contact Us - Gorilla Stunter | Get in Touch with Elite Cheerleading Community",
@@ -224,7 +226,7 @@ export default function ContactPage() {
                                   <br />
                                  Kramat Pela, Kec. Kby. Baru
                                   <br />
-                                 Kota Jakarta Selatan, DKI Jakarta 12130
+                                 Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
                                   <br />
                                  Indonesia
                                 </p>
@@ -256,11 +258,11 @@ export default function ContactPage() {
                             <div>
                               <h3 className="font-heading font-bold text-xl text-foreground mb-2">Call Us</h3>
                               <p className="font-body text-muted-foreground leading-relaxed">
-                                Main: (555) 123-4567
+                                Main: (+62) 851-3352-4900
                                 <br />
-                                Training: (555) 123-4568
+                                Training: (+62) 851-3352-4900
                                 <br />
-                                Emergency: (555) 123-4569
+                                Emergency: (+62) 851-3352-4900
                               </p>
                             </div>
                           </div>
@@ -441,7 +443,7 @@ export default function ContactPage() {
                         <span className="text-primary-foreground text-xs font-bold">1</span>
                       </div>
                       <p className="font-body text-muted-foreground leading-relaxed">
-                        <strong className="text-foreground">By Car:</strong> Directions to Jl. Bulungan No.1, Kramat Pela,South Jakarta. The area is easily accessible,
+                        <strong className="text-foreground">By Car:</strong> Directions to Jl. Bulungan No.1, Kramat Pela, South Jakarta. The area is easily accessible,
                       </p>
                     </div>
                     <div className="flex items-start space-x-3">
@@ -458,7 +460,7 @@ export default function ContactPage() {
                         <span className="text-primary-foreground text-xs font-bold">3</span> 
                       </div>
                       <p className="font-body text-muted-foreground leading-relaxed">
-                        <strong className="text-foreground">Airport:</strong> 50 minutes from South Jakarta
+                        <strong className="text-foreground">Airport:</strong> 50 minutes from Soekarno Hatta
                         International Airport via taxi.
                       </p>
                     </div>
@@ -474,32 +476,8 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="aspect-video bg-gradient-to-br from-primary/10 to-accent/10 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <svg
-                        className="w-12 h-12 text-primary-foreground"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                        />
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                        />
-                      </svg>
-                    </div>
-                    <h3 className="font-heading font-bold text-2xl text-foreground mb-2">Interactive Map</h3>
-                    <p className="font-body text-muted-foreground">Click to view detailed directions</p>
-                  </div>
+                <div className="w-full h-full">
+                  <InteractiveMap />
                 </div>
               </div>
             </div>
@@ -601,7 +579,7 @@ export default function ContactPage() {
                       <br />
                      Kramat Pela, Kec. Kby. Baru
                       <br />
-                     Kota Jakarta Selatan, DKI Jakarta 12130
+                     Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
                     </li>
                 </ul>
               </div>

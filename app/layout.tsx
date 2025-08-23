@@ -122,7 +122,7 @@ export default function RootLayout({
         {/* WhatsApp Business specific */}
         <meta property="business:contact_data:street_address" content="Jl. Bulungan No.1, RT.11/RW.7" />
         <meta property="business:contact_data:locality" content="Kramat Pela" />
-        <meta property="business:contact_data:region" content="Jakarta Selatan" />
+        <meta property="business:contact_data:region" content="Jakarta Selatan, Daerah Khusus Ibukota Jakarta" />
         <meta property="business:contact_data:postal_code" content="12130" />
         <meta property="business:contact_data:country_name" content="Indonesia" />
         <script
@@ -143,7 +143,7 @@ export default function RootLayout({
                 "@type": "PostalAddress",
                 streetAddress: "Jl. Bulungan No.1, RT.11/RW.7",
                 addressLocality: "Kramat Pela, Kec. Kby. Baru",
-                addressRegion: "Kota Jakarta Selatan",
+                addressRegion: "Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta",
                 postalCode: "12130",
                 addressCountry: "ID",
               },
