@@ -51,7 +51,7 @@ export default function Navigation() {
               href="/"
               className="flex items-center transition-all duration-300 transform hover:scale-105"
             >
-                              <Image
+            <Image
                   src="/new_logo_gs.png"
                   alt="Gorilla Stunter - Elite Cheerleading Community"
                   width={180}
