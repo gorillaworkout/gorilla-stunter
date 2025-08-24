@@ -573,7 +573,7 @@ export default function ContactPage() {
                 <h4 className="font-heading font-bold text-lg text-background mb-4">Contact Info</h4>
                 <ul className="space-y-2 font-body text-background/80">
                   <li>Email: info@gorillastunter.com</li>
-                  <li>Phone: (555) 123-4567</li>
+                  <li>Phone: (62) 851-3352-4900</li>
                                       <li>
                      Address: Jl. Bulungan No.1, RT.11/RW.7
                       <br />
