@@ -46,17 +46,17 @@ export default function Navigation() {
     <>
       <nav className={navClassName}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 sm:h-18 md:h-16">
+          <div className="flex items-center justify-between h-16">
             <Link
               href="/"
-              className="flex items-center transition-all duration-300 transform hover:scale-105"
+              className="flex items-center flex-shrink-0 transition-all duration-300 transform hover:scale-105"
             >
             <Image
                   src="/new_logo_gs.png"
                   alt="Gorilla Stunter - Elite Cheerleading Community"
                   width={180}
                   height={60}
-                  className="h-14 w-auto object-contain sm:h-16 md:h-16 lg:h-18 xl:h-20"
+                  className="h-10 w-auto object-contain sm:h-12 md:h-14 lg:h-16"
                   priority
                 />
             </Link>
@@ -89,6 +89,19 @@ export default function Navigation() {
                 ></span>
               </Link>
               <Link
+                href="/gallery"
+                className={`font-heading font-semibold transition-all duration-300 relative group ${
+                  isActiveLink("/gallery") ? "text-primary" : "text-foreground hover:text-primary"
+                }`}
+              >
+                Gallery
+                <span
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${
+                    isActiveLink("/gallery") ? "w-full" : ""
+                  }`}
+                ></span>
+              </Link>
+              <Link
                 href="/contact"
                 className={`font-heading font-semibold transition-all duration-300 relative group ${
                   isActiveLink("/contact") ? "text-primary" : "text-foreground hover:text-primary"
@@ -107,7 +120,7 @@ export default function Navigation() {
 
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg text-foreground hover:text-primary hover:bg-muted transition-all duration-300"
+              className="md:hidden flex-shrink-0 p-2 rounded-lg text-foreground hover:text-primary hover:bg-muted transition-all duration-300"
               aria-label="Toggle mobile menu"
             >
               <div className="w-6 h-6 relative">
@@ -167,6 +180,16 @@ export default function Navigation() {
               }`}
             >
               About
+            </Link>
+            <Link
+              href="/gallery"
+              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${
+                isActiveLink("/gallery")
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground hover:text-primary hover:bg-muted"
+              }`}
+            >
+              Gallery
             </Link>
             <Link
               href="/contact"

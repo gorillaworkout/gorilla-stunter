@@ -4,7 +4,10 @@ import AnimatedSection from "@/components/animated-section"
 import { Card, CardContent } from "@/components/ui/card"
 import StructuredData from "@/components/structured-data"
 import WhatsAppButton from "@/components/whatsapp-button"
-import Image from "next/image"
+import Link from "next/link"
+import { PRODUCTS } from "@/lib/products"
+import HomeCarouselSection from "@/components/home-carousel-section"
+
 export default function HomePage() {
   return (
     <main className="min-h-screen">
@@ -119,6 +122,37 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto">
           <AnimatedSection direction="up" className="text-center mb-16">
             <h2 className="font-heading font-black text-4xl md:text-5xl text-foreground mb-6">
+              Our <span className="text-primary">Collection</span>
+            </h2>
+            <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              Exclusive Gorilla Stunter merchandise. Explore the interactive 3D view.
+            </p>
+          </AnimatedSection>
+
+          <AnimatedSection direction="up">
+            <HomeCarouselSection />
+          </AnimatedSection>
+
+          <AnimatedSection direction="up" delay={(PRODUCTS.length + 1) * 100}>
+            <div className="text-center mt-12">
+              <Link
+                href="/gallery"
+                className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading font-bold text-lg px-8 py-4 rounded-xl hover:bg-accent transition-all duration-300 transform hover:scale-105 shadow-lg shadow-primary/20"
+              >
+                View Full Collection
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-muted">
+        <div className="max-w-6xl mx-auto">
+          <AnimatedSection direction="up" className="text-center mb-16">
+            <h2 className="font-heading font-black text-4xl md:text-5xl text-foreground mb-6">
               Our <span className="text-primary">Achievements</span>
             </h2>
             <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
@@ -146,7 +180,7 @@ export default function HomePage() {
             <AnimatedSection direction="up" delay={300}>
               <div className="text-center group hover:scale-105 transition-transform duration-300">
                 <div className="font-heading font-black text-5xl md:text-6xl text-primary mb-2 group-hover:text-accent transition-colors">
-                  25+
+                  10+
                 </div>
                 <div className="font-body text-lg text-muted-foreground">Years Combined Experience</div>
               </div>
@@ -452,6 +486,11 @@ export default function HomePage() {
                   </a>
                 </li>
                 <li>
+                  <a href="/gallery" className="hover:text-primary transition-colors">
+                    Gallery
+                  </a>
+                </li>
+                <li>
                   <a href="/contact" className="hover:text-primary transition-colors">
                     Contact
                   </a>
@@ -474,13 +513,13 @@ export default function HomePage() {
               <ul className="space-y-2 font-body text-background/80">
                 <li>Email: info@gorillastunter.com</li>
                 <li>Phone: (62) 851-3352-4900</li>
-                                  <li>
-                   Address: Jl. Bulungan No.1, RT.11/RW.7
-                    <br />
-                   Kramat Pela, Kec. Kby. Baru
-                    <br />
-                   Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
-                  </li>
+                <li>
+                  Address: Jl. Bulungan No.1, RT.11/RW.7
+                  <br />
+                  Kramat Pela, Kec. Kby. Baru
+                  <br />
+                  Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
+                </li>
               </ul>
             </div>
           </div>
