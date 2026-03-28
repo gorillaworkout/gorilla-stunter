@@ -388,9 +388,12 @@ export default function HomePage() {
             </p>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            <AnimatedSection direction="left" delay={100}>
-              <Card className="bg-background border-border hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300">
+          {/* Scrolling Marquee Wrapper for more dynamic feel */}
+          <div className="relative w-full overflow-hidden flex flex-col gap-6">
+            <div className="flex animate-scroll hover:pause-animation gap-8 pr-8 w-max">
+              
+              {/* Review 1 - Sollah */}
+              <Card className="w-[350px] shrink-0 bg-background border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-4">
                     <div className="flex text-primary">
@@ -405,7 +408,7 @@ export default function HomePage() {
                     "Gorilla Stunter transformed my cheerleading career. The training is intense but incredibly
                     rewarding. I've never felt more confident in my abilities."
                   </p>
-                  <div className="flex items-center">
+                  <div className="flex items-center mt-auto">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
                       <span className="font-heading font-bold text-primary-foreground">SM</span>
                     </div>
@@ -416,10 +419,63 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
-            </AnimatedSection>
 
-            <AnimatedSection direction="up" delay={200}>
-              <Card className="bg-background border-border hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300">
+              {/* Review 2 - Kimi */}
+              <Card className="w-[350px] shrink-0 bg-background border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-4">
+                    <div className="flex text-primary">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="font-body text-muted-foreground mb-6 leading-relaxed">
+                    "Teknik partner stunt yang diajarin bener-bener solid. Awalnya takut jatuh, tapi coach-nya bikin aku ngerasa aman banget di atas."
+                  </p>
+                  <div className="flex items-center mt-auto">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                      <span className="font-heading font-bold text-primary-foreground">KM</span>
+                    </div>
+                    <div>
+                      <div className="font-heading font-semibold text-foreground">Kimi</div>
+                      <div className="font-body text-sm text-muted-foreground">Flyer</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 3 - Hikaru */}
+              <Card className="w-[350px] shrink-0 bg-background border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-4">
+                    <div className="flex text-primary">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="font-body text-muted-foreground mb-6 leading-relaxed">
+                    "Power, speed, dan execution. Tiga hal itu bener-bener diasah sampai maksimal di sini. Vibes latihannya juga gak ada lawan!"
+                  </p>
+                  <div className="flex items-center mt-auto">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                      <span className="font-heading font-bold text-primary-foreground">HK</span>
+                    </div>
+                    <div>
+                      <div className="font-heading font-semibold text-foreground">Hikaru</div>
+                      <div className="font-body text-sm text-muted-foreground">Elite Base</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 4 - Indah */}
+              <Card className="w-[350px] shrink-0 bg-background border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-4">
                     <div className="flex text-primary">
@@ -434,9 +490,9 @@ export default function HomePage() {
                     "The partner matching system is genius! I found my perfect stunt partner here and we've been
                     dominating competitions ever since."
                   </p>
-                  <div className="flex items-center">
+                  <div className="flex items-center mt-auto">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
-                      <span className="font-heading font-bold text-primary-foreground">MJ</span>
+                      <span className="font-heading font-bold text-primary-foreground">IT</span>
                     </div>
                     <div>
                       <div className="font-heading font-semibold text-foreground">Indah Tri</div>
@@ -445,10 +501,63 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
-            </AnimatedSection>
 
-            <AnimatedSection direction="right" delay={300}>
-              <Card className="bg-background border-border hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-2 transition-all duration-300">
+              {/* Review 5 - Raka */}
+              <Card className="w-[350px] shrink-0 bg-background border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-4">
+                    <div className="flex text-primary">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="font-body text-muted-foreground mb-6 leading-relaxed">
+                    "Dari nol sampai bisa full up. Latihannya brutal tapi seru abis. Komunitasnya juga saling support banget."
+                  </p>
+                  <div className="flex items-center mt-auto">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                      <span className="font-heading font-bold text-primary-foreground">RK</span>
+                    </div>
+                    <div>
+                      <div className="font-heading font-semibold text-foreground">Raka</div>
+                      <div className="font-body text-sm text-muted-foreground">Pro Base</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 6 - Firly */}
+              <Card className="w-[350px] shrink-0 bg-background border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
+                <CardContent className="p-8">
+                  <div className="flex items-center mb-4">
+                    <div className="flex text-primary">
+                      {[...Array(5)].map((_, i) => (
+                        <svg key={i} className="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                  </div>
+                  <p className="font-body text-muted-foreground mb-6 leading-relaxed">
+                    "Gak nyangka bisa ngelewatin limit diri sendiri. Coach-nya super detail kalau ngejelasin teknik, bad habit langsung ilang."
+                  </p>
+                  <div className="flex items-center mt-auto">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
+                      <span className="font-heading font-bold text-primary-foreground">FR</span>
+                    </div>
+                    <div>
+                      <div className="font-heading font-semibold text-foreground">Firly</div>
+                      <div className="font-body text-sm text-muted-foreground">Base</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Review 7 - Rai */}
+              <Card className="w-[350px] shrink-0 bg-background border-border hover:shadow-lg hover:shadow-primary/10 transition-all duration-300">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-4">
                     <div className="flex text-primary">
@@ -463,7 +572,7 @@ export default function HomePage() {
                     "This community is like family. The support, knowledge sharing, and celebration of achievements
                     makes every training session special."
                   </p>
-                  <div className="flex items-center">
+                  <div className="flex items-center mt-auto">
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4">
                       <span className="font-heading font-bold text-primary-foreground">AL</span>
                     </div>
@@ -474,7 +583,8 @@ export default function HomePage() {
                   </div>
                 </CardContent>
               </Card>
-            </AnimatedSection>
+
+            </div>
           </div>
         </div>
       </section>
