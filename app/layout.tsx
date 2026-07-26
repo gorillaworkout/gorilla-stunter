@@ -99,7 +99,7 @@ export default function RootLayout({
         <meta name="google-site-verification" content="your-google-verification-code" />
         <meta name="format-detection" content="telephone=no" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-        
+
         {/* WhatsApp and Telegram specific meta tags */}
         <meta property="og:image" content="https://gorillastunter.gorillaworkout.id/new_gs_4.png" />
         <meta property="og:image:secure_url" content="https://gorillastunter.gorillaworkout.id/new_gs_4.png" />
@@ -107,18 +107,18 @@ export default function RootLayout({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:image:alt" content="Gorilla Stunter - Elite Cheerleading Stunt Community" />
-        
+
         {/* Additional social media meta tags */}
         <meta name="twitter:image" content="https://gorillastunter.gorillaworkout.id/new_gs_4.png" />
         <meta name="twitter:image:alt" content="Gorilla Stunter - Elite Cheerleading Stunt Community" />
-        
+
         {/* Additional meta tags for better sharing */}
         <meta property="og:site_name" content="Gorilla Stunter" />
         <meta property="og:locale" content="en_US" />
         <meta property="article:author" content="Gorilla Stunter" />
         <meta name="apple-mobile-web-app-title" content="Gorilla Stunter" />
         <meta name="application-name" content="Gorilla Stunter" />
-        
+
         {/* WhatsApp Business specific */}
         <meta property="business:contact_data:street_address" content="Jl. Bulungan No.1, RT.11/RW.7" />
         <meta property="business:contact_data:locality" content="Kramat Pela" />
@@ -138,7 +138,7 @@ export default function RootLayout({
               logo: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
               image: "https://gorillastunter.gorillaworkout.id/new_gs_4.png",
               telephone: "+1-555-123-4567",
-              email: "info@gorillastunter.com",
+              email: "darmawanbayu1@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Jl. Bulungan No.1, RT.11/RW.7",

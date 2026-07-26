@@ -4,9 +4,9 @@ import * as React from "react"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { type VariantProps } from "class-variance-authority"
 
-interface WhatsAppButtonProps 
+interface WhatsAppButtonProps
   extends React.ComponentProps<"button">,
-    VariantProps<typeof buttonVariants> {
+  VariantProps<typeof buttonVariants> {
   asChild?: boolean
   children: React.ReactNode
 }
@@ -14,7 +14,7 @@ interface WhatsAppButtonProps
 const WhatsAppButton = React.forwardRef<HTMLButtonElement, WhatsAppButtonProps>(
   ({ children, ...props }, ref) => {
     const handleClick = () => {
-      window.open('https://chat.whatsapp.com/B66JcOMYoKfKocI8sF2gF1?mode=ems_copy_c', '_blank')
+      window.open('https://wa.me/6285133524900', '_blank')
     }
 
     return (

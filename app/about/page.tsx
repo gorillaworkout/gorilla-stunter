@@ -123,8 +123,8 @@ export default function AboutPage() {
                         <h3 className="font-heading font-bold text-2xl text-foreground">The Vision</h3>
                       </div>
                       <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                        Gorilla Stunter was born from a simple but powerful idea: to create the ultimate platform where 
-                        cheerleading athletes can connect, learn, and push the boundaries of what's possible in stunts. 
+                        Gorilla Stunter was born from a simple but powerful idea: to create the ultimate platform where
+                        cheerleading athletes can connect, learn, and push the boundaries of what's possible in stunts.
                         Founded by experienced athletes who saw the need for a dedicated stunt partner community.
                       </p>
                     </div>
@@ -167,8 +167,8 @@ export default function AboutPage() {
                         <h3 className="font-heading font-bold text-2xl text-foreground">Building Community</h3>
                       </div>
                       <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                        Our focus is on building a strong foundation with our first group of dedicated members. 
-                        We're developing our partner matching system and establishing training protocols that 
+                        Our focus is on building a strong foundation with our first group of dedicated members.
+                        We're developing our partner matching system and establishing training protocols that
                         prioritize safety, skill development, and meaningful connections between athletes.
                       </p>
                     </div>
@@ -205,8 +205,8 @@ export default function AboutPage() {
                         <h3 className="font-heading font-bold text-2xl text-foreground">Expanding Horizons</h3>
                       </div>
                       <p className="font-body text-lg text-muted-foreground leading-relaxed">
-                        Our vision for the future: to grow into a thriving community of passionate athletes, expand our 
-                        network of certified coaches, and establish Gorilla Stunter as the go-to platform for elite 
+                        Our vision for the future: to grow into a thriving community of passionate athletes, expand our
+                        network of certified coaches, and establish Gorilla Stunter as the go-to platform for elite
                         cheerleading stunt training and partnership matching across the region.
                       </p>
                     </div>
@@ -382,7 +382,7 @@ export default function AboutPage() {
                       <h3 className="font-heading font-bold text-xl text-foreground mb-2">Renaldy Hardyant</h3>
                       <p className="font-body text-primary font-semibold mb-4">Founder </p>
                       <p className="font-body text-muted-foreground leading-relaxed">
-                      Renaldy Hardyant is a distinguished athlete who has competed in the Asia ACIC Championship in Singapore and the ICU World Championship in America. A multiple-time national champion, he has proven his exceptional skill and consistency in the cheerleading world.
+                        Renaldy Hardyant is a distinguished athlete who has competed in the Asia ACIC Championship in Singapore and the ICU World Championship in America. A multiple-time national champion, he has proven his exceptional skill and consistency in the cheerleading world.
                       </p>
                     </CardContent>
                   </Card>
@@ -397,7 +397,7 @@ export default function AboutPage() {
                       <h3 className="font-heading font-bold text-xl text-foreground mb-2">Michael De Fretes</h3>
                       <p className="font-body text-primary font-semibold mb-4">Elite Stunt Coordinator</p>
                       <p className="font-body text-muted-foreground leading-relaxed">
-                      Michael De Fretes is a national athlete from FCSI with impressive achievements in cheerleading. He has participated in prestigious competitions such as the Asia Championship and World Championship in Japan, as well as the Cheerleading World Championship and CAIOC Japan.
+                        Michael De Fretes is a national athlete from FCSI with impressive achievements in cheerleading. He has participated in prestigious competitions such as the Asia Championship and World Championship in Japan, as well as the Cheerleading World Championship and CAIOC Japan.
                       </p>
                     </CardContent>
                   </Card>
@@ -412,7 +412,7 @@ export default function AboutPage() {
                       <h3 className="font-heading font-bold text-xl text-foreground mb-2">Rangga Cornelius</h3>
                       <p className="font-body text-primary font-semibold mb-4">Elite Stunt Coordinator</p>
                       <p className="font-body text-muted-foreground leading-relaxed">
-                      Rangga Cornelius is a talented athlete who has represented his team in both the Asia and World Championships from ICU , showcasing his skill and dedication to the sport on an international stage.
+                        Rangga Cornelius is a talented athlete who has represented his team in both the Asia and World Championships from ICU , showcasing his skill and dedication to the sport on an international stage.
                       </p>
                     </CardContent>
                   </Card>
@@ -510,15 +510,15 @@ export default function AboutPage() {
               <div>
                 <h4 className="font-heading font-bold text-lg text-background mb-4">Contact Info</h4>
                 <ul className="space-y-2 font-body text-background/80">
-                  <li>Email: info@gorillastunter.com</li>
+                  <li>Email: darmawanbayu1@gmail.com</li>
                   <li>Phone: (62) 851-3352-4900</li>
-                                      <li>
-                                        Address: Jl. Bulungan No.1, RT.11/RW.7
+                  <li>
+                    Address: Jl. Bulungan No.1, RT.11/RW.7
                     <br />
-                   Kramat Pela, Kec. Kby. Baru
+                    Kramat Pela, Kec. Kby. Baru
                     <br />
-                   Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
-                    </li>
+                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
+                  </li>
                 </ul>
               </div>
             </div>

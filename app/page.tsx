@@ -9,6 +9,7 @@ import Image from "next/image"
 import { PRODUCTS } from "@/lib/products"
 import HomeCarouselSection from "@/components/home-carousel-section"
 import TestimonialCarousel from "@/components/testimonial-carousel"
+import HomeGallery from "@/components/home-gallery"
 
 export default function HomePage() {
   return (
@@ -151,65 +152,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Training Sessions Gallery */}
-      <section className="py-20 px-4 bg-background border-t border-border">
-        <div className="max-w-6xl mx-auto">
-          <AnimatedSection direction="up" className="text-center mb-16">
-            <h2 className="font-heading font-black text-4xl md:text-5xl text-foreground mb-6">
-              Behind The <span className="text-primary">Stunts</span>
-            </h2>
-            <p className="font-body text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Before the perfect hit, there are hours of sweat, trust, and teamwork. Here's a glimpse into our training sessions.
-            </p>
-          </AnimatedSection>
-
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <AnimatedSection direction="left" delay={100}>
-              <div className="group relative rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl hover:shadow-primary/30 transition-all duration-500 border border-border/50">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 opacity-70 group-hover:opacity-80 transition-opacity duration-300"></div>
-                <Image 
-                  src="/gallery/training-1.jpg" 
-                  alt="Gorilla Stunter Night Training Session" 
-                  fill
-                  className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-8 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                  <div className="w-12 h-1 bg-primary mb-4 rounded-full"></div>
-                  <h3 className="font-heading font-black text-3xl text-white mb-3">Night Grind</h3>
-                  <p className="font-body text-white/80 leading-relaxed text-lg">Dedication doesn't stop when the sun goes down. Building strength, trust, and flawless technique together.</p>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection direction="right" delay={200}>
-              <div className="group relative rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl hover:shadow-primary/30 transition-all duration-500 border border-border/50">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent z-10 opacity-70 group-hover:opacity-80 transition-opacity duration-300"></div>
-                <Image 
-                  src="/gallery/training-2.jpg" 
-                  alt="Gorilla Stunter Community" 
-                  fill
-                  className="object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                />
-                <div className="absolute bottom-0 left-0 right-0 p-8 z-20 translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                  <div className="w-12 h-1 bg-primary mb-4 rounded-full"></div>
-                  <h3 className="font-heading font-black text-3xl text-white mb-3">The Family</h3>
-                  <p className="font-body text-white/80 leading-relaxed text-lg">More than just a team. We are a family of athletes pushing each other to achieve the impossible.</p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-          
-          <AnimatedSection direction="up" delay={300} className="text-center mt-12">
-            <WhatsAppButton
-              variant="outline"
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-heading font-semibold text-lg px-8 py-6 rounded-full"
-            >
-              Join Our Next Session
-            </WhatsAppButton>
-          </AnimatedSection>
-        </div>
-      </section>
+      <HomeGallery />
 
       <section className="py-20 px-4 bg-muted">
         <div className="max-w-6xl mx-auto">
@@ -487,7 +430,7 @@ export default function HomePage() {
             <div>
               <h4 className="font-heading font-bold text-lg text-background mb-4">Contact Info</h4>
               <ul className="space-y-2 font-body text-background/80">
-                <li>Email: info@gorillastunter.com</li>
+                <li>Email: darmawanbayu1@gmail.com</li>
                 <li>Phone: (62) 851-3352-4900</li>
                 <li>
                   Address: Jl. Bulungan No.1, RT.11/RW.7

@@ -59,7 +59,7 @@ export default function StructuredData({ type, title, description, url }: Struct
         contactPoint: {
           "@type": "ContactPoint",
           telephone: "+1-555-123-4567",
-          email: "info@gorillastunter.com",
+          email: "darmawanbayu1@gmail.com",
           contactType: "Customer Service",
           availableLanguage: "English",
         },

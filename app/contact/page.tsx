@@ -221,15 +221,15 @@ export default function ContactPage() {
                               <h3 className="font-heading font-bold text-xl text-foreground mb-2">
                                 Visit Our Facility
                               </h3>
-                                                              <p className="font-body text-muted-foreground leading-relaxed">
-                                 Jl. Bulungan No.1, RT.11/RW.7
-                                  <br />
-                                 Kramat Pela, Kec. Kby. Baru
-                                  <br />
-                                 Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
-                                  <br />
-                                 Indonesia
-                                </p>
+                              <p className="font-body text-muted-foreground leading-relaxed">
+                                Jl. Bulungan No.1, RT.11/RW.7
+                                <br />
+                                Kramat Pela, Kec. Kby. Baru
+                                <br />
+                                Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
+                                <br />
+                                Indonesia
+                              </p>
                             </div>
                           </div>
                         </CardContent>
@@ -292,7 +292,7 @@ export default function ContactPage() {
                             <div>
                               <h3 className="font-heading font-bold text-xl text-foreground mb-2">Email Us</h3>
                               <p className="font-body text-muted-foreground leading-relaxed">
-                                General: info@gorillastunter.com
+                                General: darmawanbayu1@gmail.com
                                 <br />
                                 Training: training@gorillastunter.com
                                 <br />
@@ -451,13 +451,13 @@ export default function ContactPage() {
                         <span className="text-primary-foreground text-xs font-bold">2</span>
                       </div>
                       <p className="font-body text-muted-foreground leading-relaxed">
-                        <strong className="text-foreground">By Public Transit:</strong> 
-                         MRT stop at Blok M Station
+                        <strong className="text-foreground">By Public Transit:</strong>
+                        MRT stop at Blok M Station
                       </p>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-6 h-6 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-primary-foreground text-xs font-bold">3</span> 
+                        <span className="text-primary-foreground text-xs font-bold">3</span>
                       </div>
                       <p className="font-body text-muted-foreground leading-relaxed">
                         <strong className="text-foreground">Airport:</strong> 50 minutes from Soekarno Hatta
@@ -572,15 +572,15 @@ export default function ContactPage() {
               <div>
                 <h4 className="font-heading font-bold text-lg text-background mb-4">Contact Info</h4>
                 <ul className="space-y-2 font-body text-background/80">
-                  <li>Email: info@gorillastunter.com</li>
+                  <li>Email: darmawanbayu1@gmail.com</li>
                   <li>Phone: (62) 851-3352-4900</li>
-                                      <li>
-                     Address: Jl. Bulungan No.1, RT.11/RW.7
-                      <br />
-                     Kramat Pela, Kec. Kby. Baru
-                      <br />
-                     Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
-                    </li>
+                  <li>
+                    Address: Jl. Bulungan No.1, RT.11/RW.7
+                    <br />
+                    Kramat Pela, Kec. Kby. Baru
+                    <br />
+                    Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12130
+                  </li>
                 </ul>
               </div>
             </div>

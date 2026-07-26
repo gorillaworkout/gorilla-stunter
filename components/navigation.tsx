@@ -13,17 +13,17 @@ export default function Navigation() {
 
   useEffect(() => {
     setIsMounted(true)
-    
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
-    
+
     // Only add scroll listener after component is mounted
     window.addEventListener("scroll", handleScroll)
-    
+
     // Check initial scroll position
     handleScroll()
-    
+
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
@@ -38,9 +38,8 @@ export default function Navigation() {
   }
 
   // Prevent hydration mismatch by using consistent initial state
-  const navClassName = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-    isMounted && isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg border-b border-border" : "bg-transparent"
-  }`
+  const navClassName = `fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isMounted && isScrolled ? "bg-background/95 backdrop-blur-sm shadow-lg border-b border-border" : "bg-transparent"
+    }`
 
   return (
     <>
@@ -51,67 +50,70 @@ export default function Navigation() {
               href="/"
               className="flex items-center flex-shrink-0 transition-all duration-300 transform hover:scale-105"
             >
-            <Image
-                  src="/new_logo_gs.png"
-                  alt="Gorilla Stunter - Elite Cheerleading Community"
-                  width={180}
-                  height={60}
-                  className="h-10 w-auto object-contain sm:h-12 md:h-14 lg:h-16"
-                  priority
-                />
+              <Image
+                src="/new_logo_gs.png"
+                alt="Gorilla Stunter - Elite Cheerleading Community"
+                width={180}
+                height={60}
+                className="h-10 w-auto object-contain sm:h-12 md:h-14 lg:h-16"
+                priority
+              />
             </Link>
 
             <div className="hidden md:flex items-center space-x-8">
               <Link
                 href="/"
-                className={`font-heading font-semibold transition-all duration-300 relative group ${
-                  isActiveLink("/") ? "text-primary" : "text-foreground hover:text-primary"
-                }`}
+                className={`font-heading font-semibold transition-all duration-300 relative group ${isActiveLink("/") ? "text-primary" : "text-foreground hover:text-primary"
+                  }`}
               >
                 Home
                 <span
-                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${
-                    isActiveLink("/") ? "w-full" : ""
-                  }`}
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${isActiveLink("/") ? "w-full" : ""
+                    }`}
                 ></span>
               </Link>
               <Link
                 href="/about"
-                className={`font-heading font-semibold transition-all duration-300 relative group ${
-                  isActiveLink("/about") ? "text-primary" : "text-foreground hover:text-primary"
-                }`}
+                className={`font-heading font-semibold transition-all duration-300 relative group ${isActiveLink("/about") ? "text-primary" : "text-foreground hover:text-primary"
+                  }`}
               >
                 About
                 <span
-                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${
-                    isActiveLink("/about") ? "w-full" : ""
-                  }`}
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${isActiveLink("/about") ? "w-full" : ""
+                    }`}
                 ></span>
               </Link>
               <Link
                 href="/gallery"
-                className={`font-heading font-semibold transition-all duration-300 relative group ${
-                  isActiveLink("/gallery") ? "text-primary" : "text-foreground hover:text-primary"
-                }`}
+                className={`font-heading font-semibold transition-all duration-300 relative group ${isActiveLink("/gallery") ? "text-primary" : "text-foreground hover:text-primary"
+                  }`}
               >
                 Gallery
                 <span
-                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${
-                    isActiveLink("/gallery") ? "w-full" : ""
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${isActiveLink("/gallery") ? "w-full" : ""
+                    }`}
+                ></span>
+              </Link>
+              <Link
+                href="/music"
+                className={`font-heading font-semibold transition-all duration-300 relative group ${isActiveLink("/music") ? "text-primary" : "text-foreground hover:text-primary"
                   }`}
+              >
+                Music
+                <span
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${isActiveLink("/music") ? "w-full" : ""
+                    }`}
                 ></span>
               </Link>
               <Link
                 href="/contact"
-                className={`font-heading font-semibold transition-all duration-300 relative group ${
-                  isActiveLink("/contact") ? "text-primary" : "text-foreground hover:text-primary"
-                }`}
+                className={`font-heading font-semibold transition-all duration-300 relative group ${isActiveLink("/contact") ? "text-primary" : "text-foreground hover:text-primary"
+                  }`}
               >
                 Contact
                 <span
-                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${
-                    isActiveLink("/contact") ? "w-full" : ""
-                  }`}
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full ${isActiveLink("/contact") ? "w-full" : ""
+                    }`}
                 ></span>
               </Link>
             </div>
@@ -125,19 +127,16 @@ export default function Navigation() {
             >
               <div className="w-6 h-6 relative">
                 <span
-                  className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 ${
-                    isMobileMenuOpen ? "rotate-45 top-3" : "top-1"
-                  }`}
+                  className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 ${isMobileMenuOpen ? "rotate-45 top-3" : "top-1"
+                    }`}
                 ></span>
                 <span
-                  className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 top-3 ${
-                    isMobileMenuOpen ? "opacity-0" : "opacity-100"
-                  }`}
+                  className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 top-3 ${isMobileMenuOpen ? "opacity-0" : "opacity-100"
+                    }`}
                 ></span>
                 <span
-                  className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 ${
-                    isMobileMenuOpen ? "-rotate-45 top-3" : "top-5"
-                  }`}
+                  className={`absolute block w-full h-0.5 bg-current transform transition-all duration-300 ${isMobileMenuOpen ? "-rotate-45 top-3" : "top-5"
+                    }`}
                 ></span>
               </div>
             </button>
@@ -146,9 +145,8 @@ export default function Navigation() {
       </nav>
 
       <div
-        className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${
-          isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={`fixed inset-0 z-40 md:hidden transition-all duration-300 ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
       >
         {/* Backdrop */}
         <div
@@ -158,46 +156,50 @@ export default function Navigation() {
 
         {/* Mobile menu panel */}
         <div
-          className={`absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg transform transition-all duration-300 ${
-            isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
-          }`}
+          className={`absolute top-16 left-0 right-0 bg-background border-b border-border shadow-lg transform transition-all duration-300 ${isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
+            }`}
         >
           <div className="px-4 py-6 space-y-4">
             <Link
               href="/"
-              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${
-                isActiveLink("/") ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-muted"
-              }`}
+              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${isActiveLink("/") ? "text-primary bg-primary/10" : "text-foreground hover:text-primary hover:bg-muted"
+                }`}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${
-                isActiveLink("/about")
+              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${isActiveLink("/about")
                   ? "text-primary bg-primary/10"
                   : "text-foreground hover:text-primary hover:bg-muted"
-              }`}
+                }`}
             >
               About
             </Link>
             <Link
               href="/gallery"
-              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${
-                isActiveLink("/gallery")
+              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${isActiveLink("/gallery")
                   ? "text-primary bg-primary/10"
                   : "text-foreground hover:text-primary hover:bg-muted"
-              }`}
+                }`}
             >
               Gallery
             </Link>
             <Link
-              href="/contact"
-              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${
-                isActiveLink("/contact")
+              href="/music"
+              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${isActiveLink("/music")
                   ? "text-primary bg-primary/10"
                   : "text-foreground hover:text-primary hover:bg-muted"
-              }`}
+                }`}
+            >
+              Music
+            </Link>
+            <Link
+              href="/contact"
+              className={`block font-heading font-semibold text-lg py-3 px-4 rounded-lg transition-all duration-300 ${isActiveLink("/contact")
+                  ? "text-primary bg-primary/10"
+                  : "text-foreground hover:text-primary hover:bg-muted"
+                }`}
             >
               Contact
             </Link>
